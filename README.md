@@ -13,7 +13,7 @@ For training the model within available hardware resources, the images are resiz
 # Model
 The `U-net model` has been implemented using Pytorch with some minor changes for producing best results. A `BatchNorm layer` has been introduced in the model for faster training which was not present in the original model since it was discovered a year earlier before BatchNorm. 
 
-Also, the number of channels have been reduced to curb with memory issues.
+Also, the number of channels have been reduced to curb with memory issues. The number of channels were reduced to `one-fourth` of the optimal values obtained in U-net architecture.
 ![network architecture](https://i.imgur.com/jeDVpqF.png)
 
 # Loss Function
