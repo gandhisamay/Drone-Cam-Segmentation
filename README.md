@@ -10,10 +10,11 @@ The dataset contains `400 images` which are of dimensions ` (3,4000,6000)`. Out 
 
 For training the model within available hardware resources, the images are resized to a size of `(3,256,256)`.
 
-## Classed Segmented
+## Classes Segmented
 
 ``` 
-Title               
+Label   Title
+Num                
 0)	unlabeled	      
 1)	paved-area         
 2)	dirt	           
@@ -50,7 +51,7 @@ Also, the number of channels have been reduced to curb with memory issues. The n
 `Dice Loss` function has been used for training the model. The dice loss function along with `one-hot encoding` rather than using `torch.argmax()` function since the argmax function is not differentiable.
 
 ## Notes on Memory
-Google Colab's Tesla T4 GPU has been used to train the model. 
+Google Colab's Tesla T4 GPU has been used to train the model. The model has been trained for 50 epochs. 
 
 ## License
 Credit : Just drop a star as a credit if you use any part of the implementation
