@@ -10,6 +10,36 @@ The dataset contains `400 images` which are of dimensions ` (3,4000,6000)`. Out 
 
 For training the model within available hardware resources, the images are resized to a size of `(3,256,256)`.
 
+## Classed Segmented
+
+``` 
+Title               
+0)	unlabeled	      
+1)	paved-area         
+2)	dirt	           
+3)	grass	            
+4)	gravel	          
+5)	water	            
+6)	rocks	           
+7)	pool	           
+8)      vegetation	   
+9)	roof	           
+10)	wall	            
+11)	window	           
+12	door	             
+13)	fence	             
+14)	fence-pole	       
+15)	person	         
+16)	dog	             
+17)	car	              
+18)	bicycle	          
+19)	tree	            
+20)	bald-tree	         
+21)	ar-marker	     
+22)	obstacle	        
+23)	conflicting	      
+```
+For their corresponding RGB colors check `color scheme.csv` file
 # Model
 The `U-net model` has been implemented using Pytorch with some minor changes for producing best results. A `BatchNorm layer` has been introduced in the model for faster training which was not present in the original model since it was discovered a year earlier before BatchNorm. 
 
