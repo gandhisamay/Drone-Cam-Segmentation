@@ -50,10 +50,13 @@ The `U-net model` has been implemented using Pytorch with some minor changes for
 Also, the number of channels have been reduced to curb with memory issues. The number of channels were reduced to `one-fourth` of the optimal values obtained in U-net architecture.
 ![network architecture](https://i.imgur.com/jeDVpqF.png)
 
-## Loss Function
+## Loss 
 `Dice Loss` function has been used for training the model. The dice loss function along with `one-hot encoding` rather than using `torch.argmax()` function since the argmax function is not differentiable.
 
-![Loss with epochs](https://github.com/gandhisamay/Drone-Cam-Segmentation/blob/main/Images/Loss%20Segmentation.png)
+<p align="center">
+    <img src="https://github.com/gandhisamay/Drone-Cam-Segmentation/blob/main/Images/Loss%20Segmentation.png" alt="Loss graph">
+  </a>
+</p>
 
 ### Notes on Memory
 Google Colab's Tesla T4 GPU has been used to train the model. The model has been trained for 50 epochs. 
