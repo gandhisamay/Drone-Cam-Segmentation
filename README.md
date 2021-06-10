@@ -41,6 +41,18 @@ Also, the number of channels have been reduced to curb with memory issues. The n
   </a>
 </p>
 
+## Result 
+<table>
+  <tr>
+    <td>Camera Image</td>
+     <td>Segmented Image</td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/gandhisamay/Drone-Cam-Segmentation/blob/main/Images/594.jpg" width=512 height=342></td>
+    <td><img src="https://github.com/gandhisamay/Drone-Cam-Segmentation/blob/main/Images/Segmented%20Image.png" width=512 height=342></td>
+  </tr>
+ </table>
+
 ### Notes on Memory
 Google Colab's Tesla T4 GPU has been used to train the model. The model has been trained for 50 epochs. 
 
