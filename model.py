@@ -161,5 +161,5 @@ class Unet(nn.Module):
             
         return self.final(y)
 
-model = Unet(num_classes=23)
+model = Unet(num_classes=8)
 model.to(DEVICE)
