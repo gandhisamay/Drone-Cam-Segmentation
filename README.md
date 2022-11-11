@@ -2,7 +2,7 @@
 Semantic Segmentation is process to classify each pixel of the image into some class and then in the final image obtained has various classes marked with different colors.
 
 
-Drone Cam Images from bird view are taken and segmented into 23 different classes. The Kaggle dataset can be downloaded from the this [website](https://www.kaggle.com/bulentsiyah/semantic-drone-dataset)
+Drone Cam Images from bird view are taken and segmented into 7 different classes. The Kaggle dataset can be downloaded from the this [website](https://www.kaggle.com/bulentsiyah/semantic-drone-dataset)
 
 ## Dataset
 The dataset contains `400 images` which are of dimensions ` (3,4000,6000)`. Out of which `390 images` have been taken for training and remaining 10 haven been use for testing the model. The dataset contains the following, 
